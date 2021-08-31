@@ -19,7 +19,7 @@
 
 // Only ONE line below should be uncommented.  Add extra lines and files as needed.
 
-//#include <User_Setup.h>           // Default setup is root library folder
+#include <User_Setup.h>           // Default setup is root library folder
 
 //#include <User_Setups/Setup1_ILI9341.h>  // Setup file configured for my ILI9341
 //#include <User_Setups/Setup2_ST7735.h>   // Setup file configured for my ST7735
@@ -91,7 +91,7 @@
 
 //#include <User_Setups/Setup202_SSD1351_128.h>      // Setup file for ESP32/ESP8266 based SSD1351 128x128 1.5inch OLED display
 
-#include <User_Setups/Setup300_GC9106.h>           // Setup file for ESP32 and GC9106 Controlled 80x160 0.96 display
+//#include <User_Setups/Setup300_GC9106.h>           // Setup file for ESP32 and GC9106 Controlled 80x160 0.96 display
 //#include <User_Setups/SetupX_Template.h>
 
 
