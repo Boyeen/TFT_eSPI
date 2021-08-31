@@ -19,7 +19,7 @@
 
 // Only ONE line below should be uncommented.  Add extra lines and files as needed.
 
-#include <User_Setup.h>           // Default setup is root library folder
+//#include <User_Setup.h>           // Default setup is root library folder
 
 //#include <User_Setups/Setup1_ILI9341.h>  // Setup file configured for my ILI9341
 //#include <User_Setups/Setup2_ST7735.h>   // Setup file configured for my ST7735
@@ -69,6 +69,7 @@
 //#include <User_Setups/Setup36_RPi_touch_ST7796.h>      // Setup file configured for ESP32 and RPi ST7796 TFT with touch
 
 //#include <User_Setups/Setup43_ST7735.h>            // Setup file configured for my ST7735S 80x160
+//#include <User_Setups/Setup44_ST7735.h>            // Setup file configured for my ST7735S 80x160
 //#include <User_Setups/Setup44_TTGO_CameraPlus.h>   // Setup file for ESP32 and TTGO T-CameraPlus ST7789 SPI bus TFT    240x240
 //#include <User_Setups/Setup45_TTGO_T_Watch.h>      // Setup file for ESP32 and TTGO T-Watch ST7789 SPI bus TFT  240x240
 
@@ -90,6 +91,7 @@
 
 //#include <User_Setups/Setup202_SSD1351_128.h>      // Setup file for ESP32/ESP8266 based SSD1351 128x128 1.5inch OLED display
 
+#include <User_Setups/Setup300_GC9106.h>           // Setup file for ESP32 and GC9106 Controlled 80x160 0.96 display
 //#include <User_Setups/SetupX_Template.h>
 
 
@@ -198,6 +200,9 @@
 #elif defined (ILI9225_DRIVER)
      #include "TFT_Drivers/ILI9225_Defines.h"
      #define  TFT_DRIVER 0x9225
+#elif defined (GC9106_DRIVER)
+     #include "TFT_Drivers/GC9106_Defines.h"
+     #define  TFT_DRIVER 0x9AAA
                               // <<<<<<<<<<<<<<<<<<<<<<<< ADD NEW DRIVER HERE
                               // XYZZY_init.h and XYZZY_rotation.h must also be added in TFT_eSPI.cpp
 #elif defined (XYZZY_DRIVER)
